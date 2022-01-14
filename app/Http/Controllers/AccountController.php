@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Account;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use App\Models\User;
+
 
 
 class AccountController extends Controller
@@ -36,13 +40,13 @@ class AccountController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
     public function store(Request $request)
     {
         $account = new account;
         $account->username = $request->input('username');
-        $account->socialclub = $request->input('socialclub');
-        $account->whitelisted = $request->input('whitelisted');
-        $account->banned = $request->input('banned');
+        $account->password = Hash::make($request->input('password'));
+        $account->socialClub = $request->input('socialClub');
         $account->save();
         return redirect()->back()->with('status','account Mitglied erfolgreich hinzugefügt.');
     }

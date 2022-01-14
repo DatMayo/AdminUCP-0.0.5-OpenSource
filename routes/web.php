@@ -50,11 +50,11 @@ Route::post('add-account', [AccountController::class, 'store'])->middleware('is_
 Route::get('edit-account/{id}', [AccountController::class, 'edit'])->middleware('is_admin');
 Route::put('update-account/{id}', [AccountController::class, 'update'])->middleware('is_admin');
 Route::get('fahrzeug', [VehicleController::class, 'index'])->middleware('is_admin');
-Route::get('characters', [CharactersController::class, 'index'])->middleware('is_admin');
 Route::get('admin', [Admin::class, 'index'])->middleware('is_admin');
-Route::get('edit-characters{id}', [CharactersController::class, 'edit'])->middleware('is_admin');
-Route::put('update-characters/{id}', [CharactersController::class, 'update'])->middleware('is_admin');
+Route::get('characters', [CharactersController::class, 'index'])->middleware('is_admin');
+Route::get('add-characters', [CharactersController::class, 'create'])->middleware('is_admin');
 Route::post('add-characters', [CharactersController::class, 'store'])->middleware('is_admin');
+Route::get('edit-characters{id}', [CharactersController::class, 'edit'])->middleware('is_admin');
 Route::get('edit-vehicle/{id}', [VehicleController::class, 'edit']);
 Route::put('update-vehicle/{id}', [VehicleController::class, 'update'])->middleware('is_admin');
 

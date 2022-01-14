@@ -15,9 +15,11 @@ class Characters extends Model
         'adminRank',
         'firstname',
         'lastname',
+        'permaDead',
         'money',
         'gang',
         'gangrang',
         'faction',
+        'test',
     ];
 }

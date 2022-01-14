@@ -46,6 +46,7 @@ class CharactersController extends Controller
         $characters->gang      = $request->input('gang');
         $characters->gangrang  = $request->input('gangrang');
         $characters->faction   = $request->input('faction');
+        $characters->test = $request->get('test');
         $characters->save();
         return redirect()->back()->with('status','characters Mitglied erfolgreich hinzugefügt.');
     }
@@ -67,9 +68,11 @@ class CharactersController extends Controller
      * @param  \App\Models\Characters  $characters
      * @return \Illuminate\Http\Response
      */
-    public function edit(Characters $characters)
+    public function edit(Characters $characters, $id)
     {
-        //
+        $characters = Characters::find($id);
+        return view('characters.edit', compact('characters'));
+
     }
 
     /**
