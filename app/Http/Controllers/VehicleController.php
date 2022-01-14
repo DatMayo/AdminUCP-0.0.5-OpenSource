@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Team;
+use App\Models\Vehicle;
 
-class TeamController extends Controller
+class VehicleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class TeamController extends Controller
      */
     public function index()
     {
-        $team = Team::all();
-        return view('team.index', compact('team'));
+        $Vehicle = Vehicle::all();
+        return view('fahrzeug.index', compact('Vehicle'));
     }
 
     /**
@@ -25,7 +25,7 @@ class TeamController extends Controller
      */
     public function create()
     {
-        return view('team.create');
+        return view('fahrzeug.create');
     }
 
     /**
@@ -36,13 +36,13 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        $team = new team;
-        $team->name = $request->input('name');
-        $team->email = $request->input('email');
-        $team->level = $request->input('level');
-        $team->bereich = $request->input('bereich');
-        $team->save();
-        return redirect()->back()->with('status','Team Mitglied erfolgreich hinzugefügt.');
+        $Vehicle = new Vehicle;
+        $Vehicle->name = $request->input('name');
+        $Vehicle->email = $request->input('email');
+        $Vehicle->level = $request->input('level');
+        $Vehicle->bereich = $request->input('bereich');
+        $Vehicle->save();
+        return redirect()->back()->with('status','Vehicle Mitglied erfolgreich hinzugefügt.');
     }
 
     /**
@@ -64,8 +64,8 @@ class TeamController extends Controller
      */
     public function edit($id)
     {
-        $team = Team::find($id);
-        return view('team.edit', compact('team'));
+        $Vehicle = Vehicle::find($id);
+        return view('fahrzeug.edit', compact('Vehicle'));
 
     }
 
@@ -78,13 +78,12 @@ class TeamController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $team = team::find($id);
-        $team->name = $request->input('name');
-        $team->email = $request->input('email');
-        $team->level = $request->input('level');
-        $team->bereich = $request->input('bereich');
-        $team->update();
-        return redirect()->back()->with('status','Team Mitglied wurde erfolgreich bearbeitet.');
+        $Vehicle = Vehicle::find($id);
+        $Vehicle->charId = $request->input('charId');
+        $Vehicle->model = $request->input('model');
+        $Vehicle->numberPlate = $request->input('numberPlate');
+        $Vehicle->update();
+        return redirect()->back()->with('status','Fahrzeug wurde erfolgreich bearbeitet.');
     }
 
     /**

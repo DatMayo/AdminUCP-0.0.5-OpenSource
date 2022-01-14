@@ -12,27 +12,25 @@
         <table class="table table-bordered table-striped">
             <thead>
             <tr>
+                <th>Fahrzeug ID</th>
                 <th>Charakter ID</th>
                 <th>Modell</th>
                 <th>Kennzeichen</th>
-                <th>Eingeparkt</th>
                 <th>Tankstand</th>
-                <th>Tacho/Kilometer</th>
                 <th>Bearbeiten</th>
                 <th>Löschen</th>
             </tr>
             </thead>
             <tbody>
-            @foreach ($fahrzeug as $cars)
+            @foreach ($Vehicle as $Vehicle)
                 <tr>
-                    <td>{{ $cars->charId }}</td>
-                    <td>{{ $cars->model }}</td>
-                    <td>{{ $cars->numberPlate }}</td>
-                    <td>{{ $cars->parked}}</td>
-                    <td>{{ $cars->fill }}</td>
-                    <td>{{ $cars->km }}</td>
+                    <td>{{ $Vehicle-> id }}</td>
+                    <td>{{ $Vehicle->charId }}</td>
+                    <td>{{ $Vehicle->model }}</td>
+                    <td>{{ $Vehicle->numberPlate }}</td>
+                    <td>{{ $Vehicle->fill }}</td>
                     <td>
-                        <a href="{{ url('edit-team/'.$cars->id) }}" class="btn btn-primary btn-sm">Bearbeiten</a>
+                        <a href="{{ url('edit-vehicle/'.$Vehicle->id) }}" class="btn btn-primary btn-sm">Bear5beiten</a>
                     </td>
                     <td>
                         <a href="" class="btn btn-danger btn-sm">Löschen</a>
