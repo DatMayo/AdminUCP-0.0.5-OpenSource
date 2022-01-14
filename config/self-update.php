@@ -39,8 +39,8 @@ return [
     'repository_types' => [
         'github' => [
             'type' => 'github',
-            'repository_vendor' => env('SELF_UPDATER_REPO_VENDOR', ''),
-            'repository_name' => env('SELF_UPDATER_REPO_NAME', ''),
+            'repository_vendor' => env('SELF_UPDATER_REPO_VENDOR', 'BraincoreDEV'),
+            'repository_name' => env('SELF_UPDATER_REPO_NAME', 'AdminUCP'),
             'repository_url' => 'https://github.com/BraincoreDEV/AdminUCP',
             'download_path' => env('SELF_UPDATER_DOWNLOAD_PATH', '/tmp'),
             'private_access_token' => env('SELF_UPDATER_GITHUB_PRIVATE_ACCESS_TOKEN', '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'),
