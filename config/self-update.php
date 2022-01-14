@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'version_installed' => env('SELF_UPDATER_VERSION_INSTALLED', ''),
+    'version_installed' => env('SELF_UPDATER_VERSION_INSTALLED', '0.0.1'),
 
     /*
     |--------------------------------------------------------------------------
@@ -68,10 +68,8 @@ return [
     */
 
     'exclude_folders' => [
-        '__MACOSX',
         'node_modules',
         'bootstrap/cache',
-        'bower',
         'storage/app',
         'storage/framework',
         'storage/logs',
@@ -114,12 +112,12 @@ return [
 
         'mail' => [
             'to' => [
-                'address' => env('SELF_UPDATER_MAILTO_ADDRESS', 'notifications@example.com'),
+                'address' => env('SELF_UPDATER_MAILTO_ADDRESS', 'hollenbachalexander6@gmail.com'),
                 'name' => env('SELF_UPDATER_MAILTO_NAME', ''),
             ],
 
             'from' => [
-                'address' => env('SELF_UPDATER_MAIL_FROM_ADDRESS', 'updater@example.com'),
+                'address' => env('SELF_UPDATER_MAIL_FROM_ADDRESS', 'updater@clc-host.eu'),
                 'name' => env('SELF_UPDATER_MAIL_FROM_NAME', 'Update'),
             ],
         ],
