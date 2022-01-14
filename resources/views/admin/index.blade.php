@@ -31,9 +31,8 @@
             <br>
             <p>Hinzufügen von Elementen</p>
             <a href="add-team" class="btn btn-outline-success">Teammitglied Hinzufügen</a>
-            <a href="#" class="btn btn-outline-success">Account hinzufügen</a>
-            <a href="#" class="btn btn-outline-success">Charaktere hinzufügen</a>
-            <a href="#" class="btn btn-outline-success">Fahrzeuge hinzufügen</a>
+            <a href="add-account" class="btn btn-outline-success">Account hinzufügen</a>
+            <a href="add-characters" class="btn btn-outline-success">Charaktere hinzufügen</a>
             <a href="fragebogen-edit" class="btn btn-outline-success">Fragebogen Whitelist bearbeiten</a>
 
 
