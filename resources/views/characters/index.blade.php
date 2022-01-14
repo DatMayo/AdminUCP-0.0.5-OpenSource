@@ -7,9 +7,12 @@
 @stop
 
 @section('content')
+    <center><p><strong>Die Löschfunktion bitte nicht ausversehen drücken! Da keine Meldungen kommen, sondern es sofort die Charaktere löscht!!!</strong></p></center>
+    <center><p><strong>Jeglicher Funktionsverwendung wird absofort auch geloggt; und wird bei Missbrauch Sanktioniert -- heißt: Projektausschluss auf Lebenszeit</strong></p></center>
+
     <div class="card-body">
 
-        <table class="table table-bordered table-striped">
+        <table class="table table-hover table-dark">
             <thead>
             <tr>
                 <th>ID</th>
@@ -27,28 +30,29 @@
             </tr>
             </thead>
             <tbody>
-            @foreach ($characters as $character)
+            @foreach ($characters as $characters)
                 <tr>
-                    <td>{{ $character->id }}</td>
-                    <td>{{ $character->accountID }}</td>
-                    <td>{{ $character->whitelisted }}</td>
-                    <td>{{ $character->adminRank }}</td>
-                    <td>{{ $character->firstname }}</td>
-                    <td>{{ $character->lastname }}</td>
-                    <td>{{ $character->money }}</td>
-                    <td>{{ $character->gang }}</td>
-                    <td>{{ $character->gangrang }}</td>
-                    <td>{{ $character->faction }}</td>
+                    <td>{{ $characters->id }}</td>
+                    <td>{{ $characters->accountID }}</td>
+                    <td>{{ $characters->whitelisted }}</td>
+                    <td>{{ $characters->adminRank }}</td>
+                    <td>{{ $characters->firstname }}</td>
+                    <td>{{ $characters->lastname }}</td>
+                    <td>{{ $characters->money }}</td>
+                    <td>{{ $characters->gang }}</td>
+                    <td>{{ $characters->gangrang }}</td>
+                    <td>{{ $characters->faction }}</td>
                     <td>
-                        <a href="{{ url('edit-character/'.$character->id) }}" class="btn btn-primary btn-sm">Bearbeiten</a>
+                        <a href="{{ url('edit-characters/'.$characters->id) }}" class="btn btn-primary btn-sm">Bearbeiten</a>
                     </td>
                     <td>
-                        <a href="" class="btn btn-danger btn-sm">Löschen</a>
+                        <a href={{url('delete-characters/'.$characters->id)}}"" class="btn btn-danger btn-sm">Löschen</a>
                     </td>
                 </tr>
             @endforeach
             </tbody>
         </table>
+        <center><p>Die Löschfunktion bitte nicht ausversehen drücken! Da keine Meldungen kommen, sondern es sofort die Charaktere löscht!!!</p></center>
 
     </div>
 @stop

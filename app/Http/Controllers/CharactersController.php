@@ -93,8 +93,9 @@ class CharactersController extends Controller
      * @param  \App\Models\Characters  $characters
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Characters $characters)
+    public function destroy(Characters $characters, $id)
     {
-        //
+        Characters::destroy($id);
+        return redirect('characters')->with('status','Charakter wurde erfolgreich gelöscht.');
     }
 }
