@@ -20,6 +20,5 @@ class Characters extends Model
         'gang',
         'gangrang',
         'faction',
-        'test',
     ];
 }

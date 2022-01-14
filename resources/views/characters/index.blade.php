@@ -11,9 +11,9 @@
 
         <table class="table table-bordered table-striped">
             <thead>
-            <tr>@foreach ($characters as $character)
+            <tr>
                 <th>ID</th>
-                <th>{{$characters->accountID}}</th>
+                <th>AccountID</th>
                 <th>Whitelist</th>
                 <th>Adminrank</th>
                 <th>Vorname</th>
@@ -27,7 +27,7 @@
             </tr>
             </thead>
             <tbody>
-
+            @foreach ($characters as $character)
                 <tr>
                     <td>{{ $character->id }}</td>
                     <td>{{ $character->accountID }}</td>
