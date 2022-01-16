@@ -70,7 +70,7 @@ class WhitelistController extends Controller
      */
     public function edit(Whitelist $whitelist)
     {
-        $whitelist = whitelist::all();
+        $whitelist = whitelist::find($whitelist);
         return view('whitelist.edit', compact('whitelist'));
     }
 
