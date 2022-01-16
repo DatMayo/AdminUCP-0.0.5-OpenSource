@@ -232,36 +232,17 @@ return [
         ],
         [
             'type'         => 'fullscreen-widget',
-            'topnav_right' => false,
+            'topnav_right' => true,
         ],
 
         // Sidebar items:
-        [
-            'type' => 'sidebar-menu-search',
-            'text' => 'Suche',
-        ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        ['header' => 'Einstellungen'],
-        [
-            'text' => 'Login',
-            'url'  => 'login',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'Passwort ändern',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
+
 
         ['header' => 'Admin Dashboard'],
         [
             'text'    => 'Team',
             'icon'    => 'fas fa-fw ',
-            'label'   => 'NEU',
+
             'submenu' => [
                 [
                     'text' => 'Team anzeigen',
@@ -279,8 +260,7 @@ return [
         [
             'text'    => 'Support Menü',
             'icon'    => 'fas fa-fw ',
-            'label'   => 'NEU',
-            'submenu' => [
+             'submenu' => [
                 [
                     'text' => 'Charaktere anzeigen',
                     'url'  => 'characters',
@@ -316,7 +296,6 @@ return [
         [
             'text'    => 'Entwicklungsoptionen ',
             'icon'    => 'fas fa-fw ',
-            'label'   => 'NEU',
             'submenu' => [
                 [
                     'text' => 'Fraktionen hinzufügen',
