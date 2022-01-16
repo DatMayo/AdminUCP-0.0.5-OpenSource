@@ -15,12 +15,16 @@ class CreateWhitelistTable extends Migration
     {
         Schema::create('whitelist', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('old');
-            $table->string('vdm');
-            $table->string('rdm');
-            $table->string('srp');
-            $table->string('roleplay');
+            $table->string('quest1');
+            $table->string('quest2');
+            $table->string('quest3');
+            $table->string('quest4');
+            $table->string('quest5');
+            $table->string('quest6');
+            $table->string('quest7');
+            $table->string('quest8');
+            $table->string('quest9');
+            $table->string('quest10');
             $table->timestamps();
         });
     }
