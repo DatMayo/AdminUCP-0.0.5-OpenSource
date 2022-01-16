@@ -62,6 +62,8 @@
                 <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest10 }}" disabled>
 </textarea>
             </div>
+                    <a href="{{ url('edit-whitelist/'.$whitelist->id) }}" class="btn btn-primary btn-sm">Bearbeiten</a>
+
                 </center>
             @endforeach
 
