@@ -257,27 +257,23 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
 
-        ['header' => 'User Dashboard'],
+        ['header' => 'Admin Dashboard'],
         [
-            'text'    => 'Eigentum',
+            'text'    => 'Team',
             'icon'    => 'fas fa-fw ',
             'label'   => 'NEU',
             'submenu' => [
                 [
-                    'text' => 'Meine Fahrzeuge',
-                    'url'  => '#',
+                    'text' => 'Team anzeigen',
+                    'url'  => 'team',
                     'icon' => 'fas fa-fw ',
                 ],
                 [
-                    'text' => 'Meine Häuser',
-                    'url'  => '#',
+                    'text' => 'Team Mitglied hinzufügen',
+                    'url'  => 'add-team',
                     'icon' => 'fas fa-fw ',
                 ],
-                [
-                    'text' => 'Meine Konten',
-                    'url'  => '#',
-                    'icon' => 'fas fa-fw ',
-                ],
+                
             ],
         ],
         [
