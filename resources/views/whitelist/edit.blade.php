@@ -18,25 +18,49 @@
             <div class="card">
                 <div class="card-body">
 
-                    <form action="{{ url('edit-characters/'.$characters->id) }}" method="POST">
+                    <form action="{{ url('edit-whitelist/'.$whitelist) }}" method="POST">
                         @csrf
                         @method('PUT')
 
                         <div class="form-group mb-3">
                             <label for="">AccountID</label>
-                            <input type="text" name="accountID" value="{{$characters->accountID}}" class="form-control">
+                            <input type="text" name="accountID" value="{{$whitelist->quest1}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <label for="">Vorname</label>
-                            <input type="text" name="firstname" value="{{$characters->firstname}}" class="form-control">
+                            <input type="text" name="firstname" value="{{$whitelist->quest2}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <label for="">Nachname</label>
-                            <input type="text" name="lastname" value="{{$characters->lastname}}" class="form-control">
+                            <input type="text" name="lastname" value="{{$whitelist->quest3}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <label for="">Geld</label>
-                            <input type="text" name="money" value="{{$characters->money}}" class="form-control">
+                            <input type="text" name="money" value="{{$whitelist->quest4}}" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="">Geld</label>
+                            <input type="text" name="money" value="{{$whitelist->quest5}}" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="">Geld</label>
+                            <input type="text" name="money" value="{{$whitelist->quest6}}" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="">Geld</label>
+                            <input type="text" name="money" value="{{$whitelist->quest7}}" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="">Geld</label>
+                            <input type="text" name="money" value="{{$whitelist->quest8}}" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="">Geld</label>
+                            <input type="text" name="money" value="{{$whitelist->quest9}}" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="">Geld</label>
+                            <input type="text" name="money" value="{{$whitelist->quest10}}" class="form-control">
                         </div>
                         <div class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">Update</button>

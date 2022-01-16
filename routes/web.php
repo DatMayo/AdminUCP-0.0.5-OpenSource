@@ -57,6 +57,7 @@ Route::get('edit-vehicle/{id}', [VehicleController::class, 'edit']);
 Route::put('update-vehicle/{id}', [VehicleController::class, 'update'])->middleware('is_admin');
 Route::get('delete-characters/{id}', [CharactersController::class, 'destroy'])->middleware('is_admin');
 Route::get('whitelist', [WhitelistController::class, 'index'])->middleware('is_admin');
+Route::get('edit-whitelist', [WhitelistController::class, 'edit'])->middleware('is_admin');
 
 });
 
