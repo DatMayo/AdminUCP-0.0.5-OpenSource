@@ -273,26 +273,26 @@ return [
                     'url'  => 'add-team',
                     'icon' => 'fas fa-fw ',
                 ],
-                
+
             ],
         ],
         [
-            'text'    => 'Charakter',
+            'text'    => 'Spieler Aktionen',
             'icon'    => 'fas fa-fw ',
             'label'   => 'NEU',
             'submenu' => [
                 [
                     'text' => 'Charakter anzeigen',
+                    'url'  => 'characters',
+                    'icon' => 'fas fa-fw ',
+                ],
+                [
+                    'text' => 'Account hinzufügen',
                     'url'  => '#',
                     'icon' => 'fas fa-fw ',
                 ],
                 [
-                    'text' => 'Aussehen IDs',
-                    'url'  => '#',
-                    'icon' => 'fas fa-fw ',
-                ],
-                [
-                    'text' => 'Anträge',
+                    'text' => 'Whitelist Anfragen',
                     'url'  => '#',
                     'icon' => 'fas fa-fw ',
                 ],
