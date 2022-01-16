@@ -56,9 +56,10 @@ Route::get('edit-characters{id}', [CharactersController::class, 'edit'])->middle
 Route::get('edit-vehicle/{id}', [VehicleController::class, 'edit']);
 Route::put('update-vehicle/{id}', [VehicleController::class, 'update'])->middleware('is_admin');
 Route::get('delete-characters/{id}', [CharactersController::class, 'destroy'])->middleware('is_admin');
-Route::get('whitelist', [WhitelistController::class, 'index'])->middleware('is_admin');
-Route::get('edit-whitelist/{id}', [WhitelistController::class, 'edit'])->middleware('is_admin');
-Route::put('update-whitelist/{id}', [WhitelistController::class, 'update'])->middleware('is_admin');
+Route::get('whitelist', [WhitlistController::class, 'index'])->middleware('is_admin');
+Route::get('add-whitelist', [WhitelistController::class, 'create'])->middleware('is_admin');
+Route::post('add-whitelist', [WhitelistController::class, 'store'])->middleware('is_admin');
+Route::get('edit-whitelist{id}', [WhitelistController::class, 'edit'])->middleware('is_admin');
 
 });
 
