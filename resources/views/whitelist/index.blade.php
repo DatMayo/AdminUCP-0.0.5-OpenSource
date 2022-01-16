@@ -10,45 +10,51 @@
 
     <div class="card-body">
 
-        <table class="table table-hover table-dark">
-            <thead>
-            <tr>
-                <th>Frage 1</th>
-                <th>Frage 2</th>
-                <th>Frage 3</th>
-                <th>Frage 4</th>
-                <th>Frage 6</th>
-                <th>frage 7 </th>
-                <th>Frage 8 </th>
-                <th>Frage 9 </th>
-                <th>Frage 10</th>
-                <th>Bearbeiten</th>
-                <th>Löschen</th>
-            </tr>
-            </thead>
-            <tbody>
+        
             @foreach ($whitelist as $whitelist)
-                
-                <tr> <td>{{ $whitelist->quest1 }}</td> </tr>
-                    <td>{{ $whitelist->quest2 }}</td>
-                    <td>{{ $whitelist->quest3 }}</td>
-                    <td>{{ $whitelist->quest4 }}</td>
-                    <td>{{ $whitelist->quest5 }}</td>
-                    <td>{{ $whitelist->quest6 }}</td>
-                    <td>{{ $whitelist->quest7 }}</td>
-                    <td>{{ $whitelist->quest8 }}</td>
-                    <td>{{ $whitelist->quest9 }}</td>
-                    <td>{{ $whitelist->quest10 }}</td>
-                    <td>
-                        <a href="{{ url('edit-whitelist/'.$whitelist->id) }}" class="btn btn-primary btn-sm">Bearbeiten</a>
-                    </td>
-                    <td>
-                        <a href={{url('delete-whitelist/'.$whitelist->id)}}"" class="btn btn-danger btn-sm">Löschen</a>
-                    </td>
-                </tr>
+                <form>
+                    <div class="form-group">
+                        <label>frage1</label> <input type="text" class="form-control" name="{{ $whitelist->quest1 }}" placeholder="Gib die Frage an">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest2 }}" placeholder="Placeholder Textfeld">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest3 }}" placeholder="Placeholder Textfeld">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest4 }}" placeholder="Placeholder Textfeld">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest5 }}" placeholder="Placeholder Textfeld">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest6 }}" placeholder="Placeholder Textfeld">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest7 }}" placeholder="Placeholder Textfeld">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest8 }}" placeholder="Placeholder Textfeld">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest9 }}" placeholder="Placeholder Textfeld">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest10 }}" placeholder="Placeholder Textfeld">
+                    </div>
+                </form>
             @endforeach
-            </tbody>
-        </table>
+
 
     </div>
 @stop
