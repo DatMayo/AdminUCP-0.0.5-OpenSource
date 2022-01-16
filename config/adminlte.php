@@ -314,22 +314,32 @@ return [
             ],
         ],
         [
-            'text'    => 'Hinzufügen ',
+            'text'    => 'Entwicklungsoptionen ',
             'icon'    => 'fas fa-fw ',
             'label'   => 'NEU',
             'submenu' => [
                 [
-                    'text' => 'Fraktion anzeigen',
+                    'text' => 'Fraktionen hinzufügen',
                     'url'  => '#',
                     'icon' => 'fas fa-fw ',
                 ],
                 [
-                    'text' => 'Fraktionsmitglieder',
+                    'text' => 'Häuser hinzufügen',
                     'url'  => '#',
                     'icon' => 'fas fa-fw ',
                 ],
                 [
-                    'text' => 'Anträge',
+                    'text' => 'Peds hinzufügen',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw ',
+                ],
+                [
+                    'text' => 'Firmenkonto hinzufügen',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw ',
+                ],
+                [
+                    'text' => 'Items hinzufügen',
                     'url'  => '#',
                     'icon' => 'fas fa-fw ',
                 ],
