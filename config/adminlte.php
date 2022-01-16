@@ -298,17 +298,17 @@ return [
                 ],
                 [
                     'text' => 'Fragenbogen updaten',
-                    'url'  => '#',
+                    'url'  => 'whitelist',
                     'icon' => 'fas fa-fw ',
                 ],
                 [
                     'text' => 'Character Hinzufügen',
-                    'url'  => '#',
+                    'url'  => 'add-characters',
                     'icon' => 'fas fa-fw ',
                 ],
                 [
                     'text' => 'Account Optionen',
-                    'url'  => '#',
+                    'url'  => 'account',
                     'icon' => 'fas fa-fw ',
                 ],
             ],
