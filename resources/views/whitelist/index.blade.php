@@ -10,49 +10,59 @@
 
     <div class="card-body">
 
-        
             @foreach ($whitelist as $whitelist)
-                <form>
-                    <div class="form-group">
-                        <label>frage1</label> <input type="text" class="form-control" name="{{ $whitelist->quest1 }}" placeholder="Gib die Frage an">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest2 }}" placeholder="Placeholder Textfeld">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest3 }}" placeholder="Placeholder Textfeld">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest4 }}" placeholder="Placeholder Textfeld">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest5 }}" placeholder="Placeholder Textfeld">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest6 }}" placeholder="Placeholder Textfeld">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest7 }}" placeholder="Placeholder Textfeld">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest8 }}" placeholder="Placeholder Textfeld">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest9 }}" placeholder="Placeholder Textfeld">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Beschriftung Textfeld</label> <input type="text" class="form-control" name="{{ $whitelist->quest10 }}" placeholder="Placeholder Textfeld">
-                    </div>
-                </form>
+                <center>
+            <div class="form-group">
+                <label>Aktuelle Frage 1</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest1 }}" disabled>
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>Aktuelle Frage 2</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest2 }}" disabled>
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>Aktuelle Frage 3</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest3 }}" disabled>
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>Aktuelle Frage 4</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest4 }}" disabled>
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>Aktuelle Frage 5</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest5 }}" disabled>
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>Aktuelle Frage 6</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest6 }}" disabled>
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>Aktuelle Frage 7</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest7 }}" disabled>
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>Aktuelle Frage 8</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest8 }}" disabled>
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>Aktuelle Frage 9</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest9 }}" disabled>
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>Aktuelle Frage 10</label>
+                <textarea class="form-control" name="textarea_name" placeholder=" {{ $whitelist->quest10 }}" disabled>
+</textarea>
+            </div>
+                </center>
             @endforeach
 
 
