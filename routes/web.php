@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
-use App\Http\Controllers\FragebogenController;
+use App\Http\Controllers\WhitelistController;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\CharactersController;
@@ -23,9 +23,7 @@ use App\Http\Controllers\Admin;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('fragebogen', [FragebogenController::class, 'index']);
-Route::get('add-fragenbogen', [FragebogenController::class, 'create']);
-Route::post('add-fragenbogen', [FragebogenController::class, 'store']);
+
 
 Auth::routes();
 
@@ -55,9 +53,10 @@ Route::get('characters', [CharactersController::class, 'index'])->middleware('is
 Route::get('add-characters', [CharactersController::class, 'create'])->middleware('is_admin');
 Route::post('add-characters', [CharactersController::class, 'store'])->middleware('is_admin');
 Route::get('edit-characters{id}', [CharactersController::class, 'edit'])->middleware('is_admin');
-Route::get('edit-vehicle/{id}', [VehicleController::class, 'edit'])->middleware('is_admin');
+Route::get('edit-vehicle/{id}', [VehicleController::class, 'edit']);
 Route::put('update-vehicle/{id}', [VehicleController::class, 'update'])->middleware('is_admin');
 Route::get('delete-characters/{id}', [CharactersController::class, 'destroy'])->middleware('is_admin');
+Route::get('whitelist', [WhitelistController::class, 'index'])->middleware('is_admin');
 
 });
 
