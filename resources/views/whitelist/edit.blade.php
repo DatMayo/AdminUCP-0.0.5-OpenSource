@@ -18,7 +18,7 @@
             <div class="card">
                 <div class="card-body">
 
-                    <form action="{{ url('edit-whitelist/'.$whitelist) }}" method="POST">
+                    <form action="{{ url('edit-whitelist/'.$whitelist->whitelist) }}" method="POST">
                         @csrf
                         @method('PUT')
 
