@@ -188,7 +188,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'admin',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'password_reset_url' => 'password/reset',
@@ -296,10 +296,25 @@ return [
                     'url'  => '#',
                     'icon' => 'fas fa-fw ',
                 ],
+                [
+                    'text' => 'Fragenbogen updaten',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw ',
+                ],
+                [
+                    'text' => 'Character Hinzufügen',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw ',
+                ],
+                [
+                    'text' => 'Account Optionen',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw ',
+                ],
             ],
         ],
         [
-            'text'    => 'Fraktion',
+            'text'    => 'Hinzufügen ',
             'icon'    => 'fas fa-fw ',
             'label'   => 'NEU',
             'submenu' => [
