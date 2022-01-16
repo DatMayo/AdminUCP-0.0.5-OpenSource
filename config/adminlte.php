@@ -277,18 +277,18 @@ return [
             ],
         ],
         [
-            'text'    => 'Spieler Aktionen',
+            'text'    => 'Support Menü',
             'icon'    => 'fas fa-fw ',
             'label'   => 'NEU',
             'submenu' => [
                 [
-                    'text' => 'Charakter anzeigen',
+                    'text' => 'Charaktere anzeigen',
                     'url'  => 'characters',
                     'icon' => 'fas fa-fw ',
                 ],
                 [
-                    'text' => 'Account hinzufügen',
-                    'url'  => '#',
+                    'text' => 'Accounts anzeigen',
+                    'url'  => 'account',
                     'icon' => 'fas fa-fw ',
                 ],
                 [
