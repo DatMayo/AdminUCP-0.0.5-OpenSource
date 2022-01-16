@@ -28,8 +28,8 @@
             </thead>
             <tbody>
             @foreach ($whitelist as $whitelist)
-                <tr>
-                    <td>{{ $whitelist->quest1 }}</td>
+                
+                <tr> <td>{{ $whitelist->quest1 }}</td> </tr>
                     <td>{{ $whitelist->quest2 }}</td>
                     <td>{{ $whitelist->quest3 }}</td>
                     <td>{{ $whitelist->quest4 }}</td>
