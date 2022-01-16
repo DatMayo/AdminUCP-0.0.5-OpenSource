@@ -68,7 +68,7 @@ class WhitelistController extends Controller
      * @param  \App\Models\Whitelist  $whitelist
      * @return \Illuminate\Http\Response
      */
-    public function edit(Whitelist $whitelist ,$id)
+    public function edit(Whitelist $whitelist)
     {
         $whitelist = whitelist::find();
         return view('whitelist.edit', compact('whitelist'));
