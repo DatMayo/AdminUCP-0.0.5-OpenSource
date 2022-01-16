@@ -55,7 +55,7 @@ Route::get('characters', [CharactersController::class, 'index'])->middleware('is
 Route::get('add-characters', [CharactersController::class, 'create'])->middleware('is_admin');
 Route::post('add-characters', [CharactersController::class, 'store'])->middleware('is_admin');
 Route::get('edit-characters{id}', [CharactersController::class, 'edit'])->middleware('is_admin');
-Route::get('edit-vehicle/{id}', [VehicleController::class, 'edit']);
+Route::get('edit-vehicle/{id}', [VehicleController::class, 'edit'])->middleware('is_admin');
 Route::put('update-vehicle/{id}', [VehicleController::class, 'update'])->middleware('is_admin');
 Route::get('delete-characters/{id}', [CharactersController::class, 'destroy'])->middleware('is_admin');
 
