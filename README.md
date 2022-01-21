@@ -9,18 +9,18 @@ Das AdminUCP ist für alle 3 GTA V Multiplayer Launcher AltV RAGE:MP sowie für 
 Das UCP befindet sich noch in Entwicklung - Daher funktioniert  einiges noch nicht. 
 Aktuell ist das UCP komplett auf GTR5 angepasst. 
 
-Ihr benötigt folgende Server Vorraussetzungen: 
-PHP >= 7.2.5
-BCMath PHP Extension
-Ctype PHP Extension
-Fileinfo PHP extension
-JSON PHP Extension
-Mbstring PHP Extension
-OpenSSL PHP Extension
-PDO PHP Extension
-Tokenizer PHP Extension
-XML PHP Extension
-PHP Composer
+-Ihr benötigt folgende Server Vorraussetzungen: 
+-PHP >= 7.2.5
+-BCMath PHP Extension
+-Ctype PHP Extension
+-Fileinfo PHP extension
+-JSON PHP Extension
+-Mbstring PHP Extension
+-OpenSSL PHP Extension
+-PDO PHP Extension
+-Tokenizer PHP Extension
+-XML PHP Extension
+-PHP Composer
 
 
 
