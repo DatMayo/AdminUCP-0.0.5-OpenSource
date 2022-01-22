@@ -10,7 +10,7 @@ Das UCP befindet sich noch in Entwicklung - Daher funktioniert  einiges noch nic
 Aktuell ist das UCP komplett auf GTR5 angepasst. 
 
 -Ihr benötigt folgende Server Vorraussetzungen: 
--PHP >= 7.2.5
+-PHP >= 8.x
 -BCMath PHP Extension
 -Ctype PHP Extension
 -Fileinfo PHP extension
