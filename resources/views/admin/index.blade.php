@@ -17,10 +17,9 @@
         <br>
         <p>Alles was hier zu sehen ist; Unterliegt der Verschwiegenheit!</p>
         <a href="team" class="btn btn-outline-success">Team</a>
-        <a href="#" class="btn btn-outline-success">Accounts</a>
+        <a href="account" class="btn btn-outline-success">Accounts</a>
         <a href="characters" class="btn btn-outline-success">Charaktere</a>
         <a href="fahrzeug" class="btn btn-outline-success">Fahrzeuge</a>
-        <a href="fragebogen" class="btn btn-outline-success">Fragebogen Whitelist</a>
 
 
 
@@ -29,11 +28,10 @@
 
         <div class="col-md-12">
             <br>
-            <p>Hinzufügen von Elementen</p>
+       
             <a href="add-team" class="btn btn-outline-success">Teammitglied Hinzufügen</a>
             <a href="add-account" class="btn btn-outline-success">Account hinzufügen</a>
             <a href="add-characters" class="btn btn-outline-success">Charaktere hinzufügen</a>
-            <a href="fragebogen-edit" class="btn btn-outline-success">Fragebogen Whitelist bearbeiten</a>
 
 
 
