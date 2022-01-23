@@ -28,7 +28,7 @@
 
         <div class="col-md-12">
             <br>
-       
+
             <a href="add-team" class="btn btn-outline-success">Teammitglied Hinzufügen</a>
             <a href="add-account" class="btn btn-outline-success">Account hinzufügen</a>
             <a href="add-characters" class="btn btn-outline-success">Charaktere hinzufügen</a>
@@ -51,11 +51,5 @@
 @stop
 
 @section('footer')
-    <a href="admin">Adminbereich</a> | <a href="support/login">Supportbereich</a> | <b>Version</b> 0.0.1 alpha
-    <div class="float-right d-none d-sm-inline-block">
-        | <strong>Copyright &copy; 2022 <a href="#">CLCUCP</a>.</strong>
-        All rights reserved.
-    </div>
-
-
+   <footer> @include('layouts.footer')</footer>
 @stop
