@@ -7,6 +7,7 @@ use App\Http\Controllers\AccountController;
 use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\CharactersController;
 use App\Http\Controllers\Admin;
+use App\Http\Controllers\ItemController;
 
 
 /*
@@ -60,7 +61,10 @@ Route::get('whitelist', [WhitelistController::class, 'index'])->middleware('is_a
 Route::get('add-whitelist', [WhitelistController::class, 'create'])->middleware('is_admin');
 Route::post('add-whitelist', [WhitelistController::class, 'store'])->middleware('is_admin');
 Route::get('edit-whitelist{id}', [WhitelistController::class, 'edit'])->middleware('is_admin');
-
+Route::get('items', [ItemController::class, 'index'])->middleware('is_admin');
+Route::get('add-items', [ItemController::class, 'create'])->middleware('is_admin');
+Route::post('add-itemss', [ItemController::class, 'store'])->middleware('is_admin');
+Route::get('edit-items/{id}', [ItemController::class, 'edit'])->middleware('is_admin');
 });
 
 

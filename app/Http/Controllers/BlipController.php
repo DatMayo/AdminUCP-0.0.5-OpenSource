@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Item;
+use App\Models\Blip;
 use Illuminate\Http\Request;
 
-class ItemController extends Controller
+class BlipController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $items = item::all();
-        return view('items.index',compact('items'));
+        //
     }
 
     /**
@@ -25,8 +24,7 @@ class ItemController extends Controller
      */
     public function create()
     {
-        return view('items.create');
-
+        //
     }
 
     /**
@@ -43,10 +41,10 @@ class ItemController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Item  $item
+     * @param  \App\Models\Blip  $blip
      * @return \Illuminate\Http\Response
      */
-    public function show(Item $item)
+    public function show(Blip $blip)
     {
         //
     }
@@ -54,23 +52,22 @@ class ItemController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Item  $item
+     * @param  \App\Models\Blip  $blip
      * @return \Illuminate\Http\Response
      */
-    public function edit(Item $item, $id)
+    public function edit(Blip $blip)
     {
-        $items = Item::find($id);
-        return view('items.edit', compact('items'));
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Item  $item
+     * @param  \App\Models\Blip  $blip
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Item $item)
+    public function update(Request $request, Blip $blip)
     {
         //
     }
@@ -78,10 +75,10 @@ class ItemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Item  $item
+     * @param  \App\Models\Blip  $blip
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Item $item)
+    public function destroy(Blip $blip)
     {
         //
     }
